@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>STUDENTS DATA</title>
+  </head>
+  <body>
+    <h1>STUDENTS DATA</h1>
+    {% for student in student_data %}
+    Roll Number - {{student.roll_number}}<br>
+    first Name - {{student.first_name}}<br>
+    Last Name - {{student.last_name}}<br>
+    Age - {{student.age}}<br>
+    Blood Group - {{student.blood_group}}
+    <br>
+    {% endfor %}
+      </body>
+      </html> 
